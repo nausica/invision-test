@@ -1,0 +1,770 @@
+@font-face {
+  font-family: 'invision-iconic';
+  src: url('font/invision-iconic.eot?54533460');
+  src: url('font/invision-iconic.eot?54533460#iefix') format('embedded-opentype'), url('font/invision-iconic.woff?54533460') format('woff'), url('font/invision-iconic.ttf?54533460') format('truetype'), url('font/invision-iconic.svg?54533460#invision-iconic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	@font-face {
+		font-family: 'invision-iconic';
+		src: url('../font/invision-iconic.svg?54533460#invision-iconic') format('svg');
+	}
+}
+*/
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "invision-iconic";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+.icon-new_message:before {
+  content: '\e800';
+}
+.icon-logo:before {
+  content: '\e801';
+}
+.icon-search:before {
+  content: '\e802';
+}
+.icon-reply:before {
+  content: '\e803';
+}
+.icon-like:before {
+  content: '\e804';
+}
+.icon-arrow-down:before {
+  content: '\e805';
+}
+.icon-videocam:before {
+  content: '\e806';
+}
+.icon-camera:before {
+  content: '\e807';
+}
+.icon-menu:before {
+  content: '\e808';
+}
+.icon-layout:before {
+  content: '\e809';
+}
+.icon-lock:before {
+  content: '\e80a';
+}
+.icon-user:before {
+  content: '\e80b';
+}
+.icon-email:before {
+  content: '\e80c';
+}
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.row:after {
+  clear: both;
+}
+.list-unstyled {
+  list-style: outside none none;
+  padding-left: 0;
+}
+.hide {
+  display: none;
+}
+body {
+  margin: 0;
+}
+input,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -moz-user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.btn-small {
+  font-size: 12px;
+  border-radius: 4px;
+}
+.btn-save {
+  color: #fff;
+  background-color: #00b286;
+  font-weight: 600;
+}
+a {
+  background: transparent;
+  text-decoration: none;
+  outline: 0;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+html {
+  font-family: "Open Sans", sans-serif;
+}
+.form-control {
+  background-color: #262728;
+  background-image: none;
+  border: 1px solid #44474b;
+  border-radius: 4px;
+  color: #555;
+  display: block;
+  font-size: 14px;
+  height: 28px;
+  line-height: 28px;
+  width: 198px;
+  margin-right: 23px;
+  margin-left: 24px;
+}
+.icon-green {
+  color: #00cc99;
+}
+.icon-grey {
+  color: #44474b;
+}
+.icon-light-grey {
+  color: #dee1e5;
+}
+.brand-text-dark {
+  color: #70707f;
+}
+.brand-text-light {
+  color: #bec3cc;
+}
+.bio-email-grey {
+  color: #261728;
+}
+.big-icon {
+  font-size: 30px;
+}
+.small-icon {
+  font-size: 12px;
+}
+.simplysocial-banner {
+  height: 425px;
+  position: relative;
+  width: 100%;
+  transition: height 0.2s ease 0s;
+}
+.simplysocial-banner .cover-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-color: #f5f5f5;
+  height: 100%;
+  background-image: url("img/banner.png");
+}
+.simplysocial-banner .cover-image .bio {
+  color: #fff;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  text-align: center;
+}
+.simplysocial-banner .cover-image .bio h1,
+.simplysocial-banner .cover-image .bio h2,
+.simplysocial-banner .cover-image .bio h3 {
+  font-weight: 100;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+}
+.simplysocial-banner .cover-image .bio h1 {
+  font-size: 30px;
+}
+.simplysocial-banner .cover-image .bio h2 {
+  font-size: 15px;
+}
+.simplysocial-banner .cover-image .bio h3 {
+  font-size: 15px;
+  color: #261728;
+}
+.simplysocial-banner .cover-image .bio img.avatar {
+  border: 1px solid #fff;
+  border-radius: 4px;
+}
+.simplysocial-banner .cover-image .bio .banner-green-box {
+  border: 1px solid #00cc99;
+  border-radius: 3px;
+  background-color: #00cc99;
+  opacity: 0.75;
+  text-align: left;
+  color: #90d7c1;
+  font-size: 30px;
+  padding: 40px 25px;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+  font-weight: 100;
+  margin-bottom: 50px;
+}
+.simplysocial-banner .cover-image .bio .banner-green-box .status {
+  margin: 0px 0px 50px 0px;
+}
+.simplysocial-banner .cover-image .bio .banner-green-box .status-action {
+  font-size: 15px;
+  margin-right: 25px;
+}
+.simplysocial-banner .cover-image .bio .banner-nav {
+  display: table;
+  height: 54px;
+  width: 100%;
+  text-transform: uppercase;
+}
+.simplysocial-banner .cover-image .bio .banner-nav span {
+  font-size: 12px
+					;
+  font-weight: 700;
+  display: table-cell;
+  vertical-align: middle;
+}
+.simplysocial-banner .cover-image .bio .banner-nav span.selected {
+  border-bottom: 3px solid #00cc99;
+}
+.simplysocial-banner .cover-image .bio .banner-nav span.notselected {
+  padding-bottom: 3px;
+}
+.simplysocial-banner .cover-image .bio .banner-nav-home {
+  width: 75%;
+}
+.simplysocial-banner .cover-image .bio .banner-nav-icons {
+  line-height: 50px;
+}
+@media only screen and (max-width: 640px) {
+  .simplysocial-banner .cover-image .bio {
+    width: 100%;
+    left: 0;
+  }
+}
+.simplysocial-feed {
+  width: 100%;
+}
+.simplysocial-feed .feed-container {
+  padding-top: 50px;
+  margin-left: auto ;
+  margin-right: auto ;
+  width: 50%;
+}
+@media only screen and (max-width: 640px) {
+  .simplysocial-feed .feed-container {
+    width: 100%;
+  }
+}
+.simplysocial-feed .feed-container .box {
+  border: 1px solid #dee1e5;
+  border-radius: 4px;
+  color: #555;
+  margin-bottom: 25px;
+}
+.simplysocial-feed .feed-container .box .avatar-container {
+  width: 10%;
+}
+.simplysocial-feed .feed-container .box .name-container {
+  width: 50%;
+}
+.simplysocial-feed .feed-container .box .text-container {
+  width: 90%;
+  font-size: 15px;
+}
+.simplysocial-feed .feed-container .box .actions > i,
+.simplysocial-feed .feed-container .box .actions > span {
+  padding-left: 20px;
+}
+.simplysocial-feed .feed-container .box h1 {
+  font-weight: 400;
+  font-size: 16px;
+}
+.simplysocial-feed .feed-container .box h2 {
+  font-weight: 400;
+  font-size: 15px;
+}
+.simplysocial-feed .feed-container .box .highlight {
+  color: #bec3cc;
+}
+.simplysocial-feed .feed-container .box .timeagolabel {
+  font-size: 14px;
+}
+.simplysocial-feed .feed-container .box .post-text-top {
+  padding: 25px 25px 0 25px;
+}
+.simplysocial-feed .feed-container .box .post-text-middle {
+  padding: 0 25px 25px 25px;
+}
+.simplysocial-feed .feed-container .box .post-text-bottom {
+  padding: 0;
+}
+.simplysocial-feed .feed-container .box .post-media {
+  max-width: 100%;
+  overflow: hidden;
+  height: 262px;
+  background-size: cover;
+  background-position: center center;
+}
+.simplysocial-feed .feed-container .box .post-media img {
+  display: inline-block;
+  vertical-align: middle;
+}
+#footer {
+  margin: 0 auto;
+  border-top: 1px solid #dee1e5;
+}
+#footer .footer-container {
+  color: #00cc99;
+  font-size: 11px;
+  text-align: center;
+  padding: 30px 0px;
+  font-weight: 600;
+}
+#footer .footer-container span {
+  padding: 0px 10px;
+}
+#footer .footer-container .copyright-grey {
+  color: #b2b5b9;
+}
+.simplysocial-header {
+  font-family: "Proxima nova", sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #262728;
+  z-index: 10;
+  width: 100%;
+  height: 60px;
+}
+.simplysocial-header .header-container {
+  margin: 0 6.6%;
+}
+.simplysocial-header .header-left {
+  float: left;
+}
+.simplysocial-header .header-right {
+  float: right;
+}
+.simplysocial-header .brand-name {
+  font-size: 19px;
+  padding: 0px;
+  line-height: 25px;
+}
+.simplysocial-header .brand-logo-container {
+  margin-right: 13px;
+}
+.simplysocial-header .brand-logo {
+  font-size: 25px;
+}
+.simplysocial-header .new-message-container {
+  cursor: pointer;
+}
+.simplysocial-header .form-group,
+.simplysocial-header .header-group {
+  display: inline-block;
+}
+.simplysocial-header .search-bar {
+  position: relative;
+}
+.simplysocial-header .search-bar .icon-search {
+  position: absolute;
+  top: 6px;
+  right: 30px;
+}
+.simplysocial-header .search-bar input {
+  padding: 0px 10px;
+}
+.simplysocial-header .avatar-dropdown {
+  padding: 8px 0px 0px 5px;
+}
+.simplysocial-header img.avatar {
+  border: 1px solid #44474b;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+.simplysocial-header .avatar-container {
+  cursor: pointer;
+  position: relative;
+  height: 60px;
+}
+.simplysocial-header li.avatar-container:hover ul {
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: -33px;
+}
+.simplysocial-header .dropdown-menu {
+  position: absolute;
+  display: none;
+  top: 40px;
+  left: -33px;
+  width: 95px;
+  background-color: #f4f5f7;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border: 1px solid #f4f5f7;
+}
+.simplysocial-header .dropdown-menu li {
+  border-bottom: 1px solid #dee1e5;
+  padding: 7px 30px 7px 17px;
+}
+.simplysocial-header .dropdown-menu li:last-child {
+  border-bottom: none;
+  border-bottom-style: none;
+}
+.simplysocial-header .dropdown-menu a {
+  color: #70767f;
+  text-decoration: none;
+  font-size: 12px;
+}
+.simplysocial-header .dropdown-menu:before {
+  position: absolute;
+  top: -5px;
+  left: 72px;
+  display: inline-block;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #f4f5f7;
+  border-left: 5px solid transparent;
+  border-bottom-color: #f4f5f7;
+  content: '';
+}
+.simplysocial-header .dropdown-menu:after {
+  position: absolute;
+  top: -4px;
+  left: 73px;
+  display: inline-block;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid #f4f5f7;
+  border-left: 4px solid transparent;
+  content: '';
+}
+.simplysocial-header #menu-icon {
+  display: none;
+}
+@media only screen and (max-width: 640px) {
+  .simplysocial-header #menu-icon {
+    display: inline-block;
+    padding: 10px;
+    font-size: 30px;
+  }
+  .simplysocial-header .nav-right ul.nav-right-elems {
+    display: none;
+    position: absolute;
+    padding: 20px;
+    background-color: #262728;
+    right: 20px;
+    top: 30px;
+    width: 50%;
+    border-radius: 4px 0 4px 4px;
+  }
+  .simplysocial-header .nav-right ul.nav-right-elems li {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+  }
+  .simplysocial-header .nav-right:hover ul.nav-right-elems {
+    display: block;
+  }
+  .simplysocial-header .search-bar input {
+    margin: 0;
+    width: auto;
+  }
+  .simplysocial-header .search-bar .icon-search {
+    display: none;
+  }
+  .simplysocial-header .nav-right ul.nav-right-elems li.pull-left {
+    text-align: left;
+  }
+}
+.simplysocial-settings {
+  padding-top: 110px;
+  color: #70767f;
+}
+@media only screen and (max-width: 640px) {
+  .simplysocial-settings .container {
+    width: 100%;
+  }
+}
+.simplysocial-settings .container {
+  width: 50%;
+  margin: 0 auto;
+}
+.simplysocial-settings .account-section,
+.simplysocial-settings .privacy-checkbox-list,
+.simplysocial-settings .notifications-list {
+  padding: 0px 0px 30px 0px;
+}
+.simplysocial-settings .notifications-list span {
+  padding: 0px 0px 0px 10px;
+}
+.simplysocial-settings h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+.simplysocial-settings h2 {
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.simplysocial-settings input {
+  background-image: none;
+  border: 1px solid #dee1e5;
+  border-radius: 4px;
+  color: #3f454d;
+  display: block;
+  font-size: 16px;
+  height: 40px;
+  line-height: 28px;
+  width: 198px;
+  padding: 0px 40px;
+}
+.simplysocial-settings .icon-email {
+  font-size: 13px;
+  top: 10px;
+}
+.simplysocial-settings li {
+  margin: 0px 0px 10px 0px;
+}
+.simplysocial-settings .privacy-checkbox-list li {
+  margin: 20px 0px 0px 0px;
+}
+.simplysocial-settings .account-section,
+.simplysocial-settings .notifications-section,
+.simplysocial-settings .privacy-section {
+  border-bottom: 1px solid #b7bbc5;
+}
+.simplysocial-settings .account-section,
+.simplysocial-settings .notifications-section,
+.simplysocial-settings .privacy-section,
+.simplysocial-settings .save-changes,
+.simplysocial-settings .post-text-top {
+  padding: 30px 0px 0px 0px;
+}
+.simplysocial-settings .account-section .field {
+  position: relative;
+  margin: 0px 0px 20px 50px;
+}
+.simplysocial-settings .account-section .field i {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+}
+.simplysocial-settings .btn-change {
+  color: #bec3cc;
+  background-color: #fff;
+  border: 1px solid #b7bbc5;
+  width: 85px;
+  height: 25px;
+}
+.simplysocial-settings .switch input {
+  display: none;
+}
+.simplysocial-settings .switch i {
+  display: inline-block;
+  cursor: pointer;
+  padding-right: 25px;
+  transition: all ease 0.2s;
+  -webkit-transition: all ease 0.2s;
+  border-radius: 25px;
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5), inset 0 0 40px #dee1e5;
+  -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5), inset 0 0 40px #dee1e5;
+}
+.simplysocial-settings .switch i:before {
+  display: block;
+  content: '';
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  background: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+.simplysocial-settings .switch :checked + i {
+  padding-right: 0;
+  padding-left: 25px;
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5), inset 0 0 40px #00b286;
+  -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5), inset 0 0 40px #00b286;
+}
+.simplysocial-settings .radio input[type="checkbox"],
+.simplysocial-settings .checkbox input[type="checkbox"],
+.simplysocial-settings .radio input[type="radio"],
+.simplysocial-settings .checkbox input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0px;
+}
+.simplysocial-settings .radio input[type="radio"],
+.simplysocial-settings .checkbox input[type="radio"],
+.simplysocial-settings .radio input[type="checkbox"],
+.simplysocial-settings .checkbox input[type="checkbox"] {
+  display: none;
+}
+.simplysocial-settings .radio label,
+.simplysocial-settings .checkbox label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 50px;
+  margin-right: 15px;
+}
+.simplysocial-settings .radio label:before,
+.simplysocial-settings .checkbox label:before {
+  border-radius: 11.5px;
+  border: 1px solid #b7bbc5;
+}
+.simplysocial-settings .radio label:before,
+.simplysocial-settings .checkbox label:before {
+  content: "";
+  display: inline-block;
+  margin-right: 10px;
+  position: absolute;
+  left: 0px;
+  bottom: 1px;
+  background-color: #fff;
+  width: 23px;
+  height: 23px;
+}
+.simplysocial-settings .radio input[type=radio]:checked + label:before,
+.simplysocial-settings .checkbox input[type=radio]:checked + label:before {
+  content: "\2022";
+  color: #00b286;
+  font-size: 60px;
+  text-align: center;
+  line-height: 20px;
+}
+.simplysocial-settings .radio input[type=checkbox]:checked + label:before,
+.simplysocial-settings .checkbox input[type=checkbox]:checked + label:before {
+  content: "\2022";
+  color: #00b286;
+  font-size: 65px;
+  text-align: center;
+  line-height: 21px;
+}
+.simplysocial-banner .bio-content {
+  margin-bottom: 20px;
+}
+.ng-modal-overlay {
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.8;
+}
+.ng-modal-dialog {
+  z-index: 10000;
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  background-color: #dee1e5;
+  box-shadow: 4px 4px 80px #000;
+  border-radius: 4px;
+}
+.ng-modal-dialog-content {
+  padding: 10px;
+  text-align: left;
+}
+.ng-modal-close {
+  position: absolute;
+  top: 3px;
+  right: 5px;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 120%;
+  display: inline-block;
+  font-weight: bold;
+}
+.dialog-content {
+  background-color: #dee1e5;
+}
+.dialog-content .header {
+  color: #3f454d;
+  padding: 5px 20px;
+}
+.dialog-content .message-wrapper {
+  padding: 10px 20px;
+}
+.dialog-content .message-wrapper textarea.message {
+  border-radius: 3px;
+  background-color: #FFF;
+  min-height: 100px;
+  font-family: Open Sans;
+  overflow: hidden;
+  width: 100%;
+  text-shadow: none;
+  display: inline-block;
+  margin: 0px;
+  border: none;
+  resize: none;
+}
+.dialog-content .actions-wrapper {
+  padding: 10px 20px;
+}
+.dialog-content .actions-wrapper .status-action {
+  font-size: 15px;
+  margin-right: 15px;
+}
+.dialog-content .actions-wrapper .save-wrapper {
+  margin-bottom: 15px;
+}

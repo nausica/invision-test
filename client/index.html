@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="simplysocial">
+<head>
+	<link rel="stylesheet" type="text/css" href="/dist/invision-challenge.css"/>
+	<script type="text/javascript" src="/dist/angular.js"></script>
+	<script type="text/javascript" src="/dist/invision-challenge.js"></script>
+</head>
+
+<body ng-controller="SimplySocialController">
+	
+	<div ng-include="'header.tpl.html'"></div>
+    
+	<div ui-view></div>
+
+	<modal-dialog show='modalShown' width='575px'>
+		<div ng-include="'message.tpl.html'"></div>
+    </modal-dialog>
+</body>
+</html>

@@ -1,0 +1,76 @@
+.ng-modal-overlay {
+	position:absolute;
+	z-index:9999;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color:#000000;
+	opacity: 0.8;
+}
+.ng-modal-dialog {
+	z-index:10000;
+	position: absolute;
+	width: 50%;
+
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+
+	background-color: @border-light-grey;
+	box-shadow: 4px 4px 80px #000;
+	border-radius: 4px;
+}
+.ng-modal-dialog-content {
+	padding:10px;
+	text-align: left;
+}
+.ng-modal-close {
+	position: absolute;
+    top: -40px;
+    right: -25px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 120%;
+    display: inline-block;
+    color: #fff;
+}
+}
+
+.dialog-content {
+	background-color: @border-light-grey;
+
+	.header {
+		color: @text-settings-grey;
+		padding: 5px 20px;
+	}
+	.message-wrapper {
+		padding: 10px 20px;
+		textarea.message {
+			border-radius: 3px;
+			background-color: #FFF;
+			min-height: 100px;
+			font-family: Open Sans;
+			overflow: hidden;
+			width: 100%;
+			text-shadow: none;
+			display: inline-block;
+			margin: 0px;
+			border: none;
+			resize: none;
+		}
+	}
+	.actions-wrapper {
+		padding: 10px 20px;
+		.status-action {
+			font-size: 15px;
+			margin-right: 15px;
+		}
+		.save-wrapper {
+			margin-bottom: 15px;
+		}
+	}
+	
+}

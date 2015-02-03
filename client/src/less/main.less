@@ -1,0 +1,240 @@
+
+html {
+	font-family: "Open Sans", sans-serif;
+}
+
+
+
+// Form
+.form-control {
+    background-color: @background-color-header;
+    background-image: none;
+    border: 1px solid @input-border-grey;
+    border-radius: 4px;
+    color: #555;
+    display: block;
+    font-size: 14px;
+    height: 28px;
+    line-height:28px;
+    width: 198px;
+    margin-right: 23px;
+    margin-left: 24px;
+}
+
+// Colors
+.icon-green {
+	color: @green-color-icon;
+}
+.icon-grey {
+	color: @grey-color-icon;
+}
+.icon-light-grey {
+	color: @border-light-grey;
+}
+.brand-text-dark {
+	color: @text-dark-grey
+}
+.brand-text-light {
+	color: @text-light-grey
+}
+.bio-email-grey {
+	color: @bio-email-grey;
+}
+.big-icon {
+	font-size: 30px;
+}
+.small-icon {
+	font-size: 12px;
+}
+
+.simplysocial-banner {
+	height: 425px;
+	position: relative;
+	width: 100%;
+	transition: height 0.2s ease 0s;
+
+	.cover-image {
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		background-color: #f5f5f5;
+		height: 100%;
+		background-image: url("img/banner.png");
+
+		.bio {
+			
+			color: #fff;
+			width: 50%;
+			position: absolute;
+			bottom: 0;
+			left: 25%;
+			text-align: center;
+
+			h1, h2, h3 {
+				font-weight: 100;
+				text-shadow: 0 0 1px rgba(0,0,0,0.3)
+
+			}
+			h1 {
+				font-size: @bio-header;
+			}
+			h2 {
+				font-size: @bio-subheader;
+			}
+			h3 {
+				font-size: @bio-subheader;
+				color: @bio-email-grey;
+			}
+
+			img.avatar {
+				border: 1px solid #fff;
+				border-radius: 4px;
+			}
+
+			.banner-green-box { 
+				border: 1px solid @green-color-icon;
+				border-radius: 3px;
+				background-color: @green-color-icon;
+				opacity: 0.75;
+				text-align: left;
+				color: @green-color-light;
+				font-size: 30px; 
+				//height: 155px;
+				//padding: 6% 3%;
+				padding: 40px 25px;
+				text-shadow: 0 0 1px rgba(0,0,0,0.3); // sharp effect, kindof
+				font-weight: 100;
+				margin-bottom: 50px;
+				.status {
+					margin: 0px 0px 50px 0px;
+				}
+				.status-action {
+					font-size: 15px;
+					margin-right: 25px;
+				}
+			}
+			.banner-nav {
+				display: table;
+				height: 54px;
+				width: 100%;
+				text-transform: uppercase;
+
+				span {
+					font-size: 12px
+					;
+					font-weight: 700;
+					display: table-cell;
+					vertical-align: middle;
+				}
+
+				span.selected {
+					border-bottom: 3px solid @green-color-icon;
+				}
+				span.notselected {
+					padding-bottom: 3px;
+				}
+			}
+			.banner-nav-home {
+				width: 75%;
+			}
+			.banner-nav-icons {
+				line-height: 50px;
+			}
+			@media only screen and (max-width : 640px) {
+				width: 100%;
+				left: 0;
+			}
+		}
+	}
+}
+.simplysocial-feed {
+	width: 100%;
+	.feed-container {
+		@media only screen and (max-width : 640px) {
+			width: 100%;
+		}
+		padding-top: 50px;
+		margin-left: auto ;
+  		margin-right: auto ;
+  		width: 50%;
+		.box {
+			border: 1px solid @border-light-grey;
+    		border-radius: 4px;
+    		color: #555;
+  			margin-bottom: 25px;
+
+  			.avatar-container {
+  				width: 10%;
+  			}
+  			.name-container {
+  				width: 50%;
+  			}
+  			.text-container {
+  				width: 90%;
+  				font-size: 15px;
+  			}
+  			.actions {
+  				> i, > span {
+  					padding-left: 20px;
+  				}
+  			}
+
+  			h1 {
+  				font-weight: 400;
+  				font-size: 16px;
+  			}
+  			h2 {
+  				font-weight: 400;
+  				font-size: 15px;
+  			}
+  			.highlight {
+  				color: @text-light-grey;
+  			}
+  			.timeagolabel {
+  				font-size: 14px;
+  			}
+
+  			.post-text-top {
+  				padding: 25px 25px 0 25px;
+  			}
+  			.post-text-middle {
+  				padding: 0 25px 25px 25px;
+  			}
+  			.post-text-bottom {
+  				padding: 0;
+  			}
+
+  			.post-media {
+  				max-width: 100%;
+  				overflow: hidden;
+  				height: 262px;
+  				background-size: cover;
+  				background-position: center center;
+
+  				img {
+  					display: inline-block;
+  					vertical-align: middle;
+  				}
+  			}
+    	}
+	}
+}
+
+#footer {
+	margin: 0 auto;
+	border-top: 1px solid @border-light-grey;
+	.footer-container {
+		color: @green-color-icon;
+		font-size: @footer-font-size;
+		text-align: center;
+		padding: 30px 0px;
+		font-weight: 600;
+
+		span {
+			padding: 0px 10px;
+		}
+		.copyright-grey {
+			color: @copyright-grey;
+		}
+	}
+}
